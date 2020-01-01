@@ -1,0 +1,16 @@
+<div style="display: none;">
+<!-- B站用户转发列表代码粘贴在这里 -->
+</div>
+
+<ol id="result">
+</ol>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".user-name").each(function () {
+            $("<li>" + $(this).text() + "</li>").appendTo("#result")
+        })
+    })
+</script>
